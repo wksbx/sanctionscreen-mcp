@@ -1,0 +1,53 @@
+:root {
+  --bg: #ffffff;
+  --bg-secondary: #f9fafb;
+  --text: #111827;
+  --text-secondary: #6b7280;
+  --border: #e5e7eb;
+  --accent: #2563eb;
+  --danger: #dc2626;
+  --warning: #f59e0b;
+  --success: #16a34a;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 14px;
+  color: var(--text);
+  background: var(--bg);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #111827;
+    --bg-secondary: #1f2937;
+    --text: #f9fafb;
+    --text-secondary: #9ca3af;
+    --border: #374151;
+    --accent: #3b82f6;
+    --danger: #ef4444;
+    --warning: #fbbf24;
+    --success: #22c55e;
+  }
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { padding: 16px; }
+
+table { width: 100%; border-collapse: collapse; }
+th, td { padding: 8px 12px; text-align: left; border-bottom: 1px solid var(--border); }
+th { background: var(--bg-secondary); font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-secondary); }
+tr:hover { background: var(--bg-secondary); }
+
+.badge { display: inline-block; padding: 2px 8px; border-radius: 9999px; font-size: 12px; font-weight: 500; }
+.badge-high { background: #fef2f2; color: var(--danger); }
+.badge-medium { background: #fffbeb; color: var(--warning); }
+.badge-low { background: #f0fdf4; color: var(--success); }
+
+.score-bar { width: 60px; height: 8px; background: var(--border); border-radius: 4px; overflow: hidden; display: inline-block; vertical-align: middle; margin-right: 6px; }
+.score-bar-fill { height: 100%; border-radius: 4px; }
+
+button { padding: 6px 12px; border: 1px solid var(--border); border-radius: 6px; background: var(--bg); color: var(--accent); cursor: pointer; font-size: 13px; }
+button:hover { background: var(--bg-secondary); }
+
+.empty-state { text-align: center; padding: 40px; color: var(--text-secondary); }
+.header { margin-bottom: 16px; }
+.header h2 { font-size: 16px; margin-bottom: 4px; }
+.header p { color: var(--text-secondary); font-size: 13px; }
