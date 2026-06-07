@@ -36,7 +36,7 @@ importers:
         specifier: ^6.0.1
         version: 6.0.1
       node-cron:
-        specifier: ^4.2.1
+        specifier: ^4.0.0
         version: 4.2.1
       transliteration:
         specifier: ^2.6.1
